@@ -4,10 +4,11 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 
-group :development, :test do
+group :development do
 # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rspec-rails', '2.14.2'
+  gem 'guard-rspec'
 end
 
 # Gems used only for assets and not required
@@ -29,6 +30,13 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '2.2.1'
+  gem 'rspec-rails', '2.14.2'
+  gem 'rb-fchange'
+  gem 'rb-notifu'
+  gem 'win32console'
+  gem 'spork','1.0.0rc0'
+  gem 'guard-spork'
+  gem 'spork-rails'
 end
 
 group :production do
